@@ -9,27 +9,42 @@
 .keypadGrid > button:nth-child(3n){
     background-color: green;
 }
-.keypadGrid > button:nth-child(3n-2){
-    background-color: orange;
+.keypadGrid > button:nth-child(3n):hover{
+    color: green;
 }
-.keypadGrid > button:nth-child(5){
-    background-color: blue;
+.keypadGrid > button:nth-child(3n-2){
+    background-color: rgb(255, 30, 0);
+}
+.keypadGrid > button:nth-child(3n-2):hover{
+    color: rgb(255, 30, 0);;
 }
 .keypadGrid > button:last-child{
     grid-column-start: 2;
-    background-color: #fff;
+    background-color: black;
+}
+.keypadGrid > button:last-child:hover{
+    background-color: white;
+    color: black;
 }
 .keypadGrid > button{
     border: none;
     outline: none;
+    font-size: 20px;
+    color: white;
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+.keypadGrid > button:hover{
+    color: gold;
+    background-color: white;
 }
 .mainDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: palegreen;
+    background-color: midnightblue;
     padding-bottom: 50px;
-    border: 2px solid red;
     width: 40%;
     margin: auto;
 }
@@ -37,21 +52,45 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid red;
-    width: 30%;
-    margin-bottom: 10vh;
+    width: 60%;
+    margin-bottom: 2vh;
 }
 .mainInput > input{
     height: 35px;
     width: 200px;
-    margin-bottom: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
 }
 .finValBox{
     background-color: #fff;
     height: 50px;
     font-size: 30px;
-    width: 70px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4vh;
+    border: 2px solid brown;
+    font-weight: bold;
+    color: brown;
+}
+.enterBtn{
+    height: 60px;
+    width: 200px;
+    border: 1px solid white;
+    background-color: purple;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.enterBtn:hover{
+    height: 60px;
+    width: 200px;
+    border: 1px solid purple;
+    background-color: white;
+    color: purple;
 }

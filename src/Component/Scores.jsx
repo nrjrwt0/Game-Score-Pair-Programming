@@ -7,7 +7,7 @@ export const Scores = ({textContent,finalValue}) => {
       <div className={styles.finValBox}>
         {finalValue}
       </div>
-      <h1>{textContent}</h1>
+      <h1 style={{color:'white'}}>{textContent}</h1>
     </div>
   )
 }
