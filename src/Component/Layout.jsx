@@ -30,7 +30,7 @@ export const Layout = () => {
         <Keypad setInput={setInput} />
       </div>
       <div>
-        <button onClick={handleMinMaxValues}>Enter</button>
+        <button className={styles.enterBtn} onClick={handleMinMaxValues}>Enter</button>
       </div>
     </div>
   )
