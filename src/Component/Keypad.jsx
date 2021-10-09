@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './Button';
+import styles from './layout.module.css';
 
 export const Keypad = ({setInput}) => {
   const nums = new Array(9).fill(0).map((el,index) => index+1);
@@ -11,7 +12,7 @@ export const Keypad = ({setInput}) => {
   }
 
   return (
-    <div>
+    <div className={styles.keypadGrid}>
       {nums.map((el) => <Button key={el} value={el} handleAddNumber={handleAddNumber}/>)}
     </div>
   )
